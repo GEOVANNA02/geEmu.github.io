@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 90%;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #d85a5a; /* Tom suave de rosa */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #6d6d6d;
+}
+
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.polaroid {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: rotate(-1deg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.polaroid:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
